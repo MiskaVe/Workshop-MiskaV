@@ -1,0 +1,143 @@
+#kuva1 {
+  width: 10%;
+  height: auto;
+}
+
+p {
+  color:  blue;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.content-box {
+  padding: 20px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+    
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#nappi {
+  display: flex;
+  justify-self: center;
+  background-color: red;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+  transition: padding 1s ease;
+}
+
+#nappi:hover {
+  background-color: black;
+  color: white;
+  padding: 1%;
+}
+
+#boksi {
+  width: 50px;
+  height: 60px;
+  background-color: coral;
+  position: relative;
+  animation: move 1.5s infinite alternate;
+}
+#boksi>p {
+  text-align: center;
+  font-size: large;
+}
+
+@keyframes move {
+  from {
+    bottom: -9px;
+  }
+  to {
+    bottom: 81px;
+  }
+}
+
+#lista li:nth-child(odd) {
+  background-color: lightblue;
+  border: 1px solid;
+}
+
+#lista li:nth-child(even) {
+  background-color: lightgreen;
+  border: 1px solid;
+}
+
+#harmaa {
+    width: 25%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+#harmaa:hover {
+  filter: grayscale(0%);
+}
+
+#quote {
+  position: relative;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+#quote::before {
+  content: '"';
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: lightgray;
+}
