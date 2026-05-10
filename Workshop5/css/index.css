@@ -1,0 +1,50 @@
+#responsiivinen {
+    display: flex;
+    flex-wrap: wrap;
+}
+#column {
+    display: flex;
+    padding: 10px;
+}
+@media (max-width: 600px) {
+    #column {
+        flex: 100%;
+    }
+}
+#responsiivinen-kuva {
+    max-width: 100%;
+    height: auto;
+    width: 25%;
+}
+#media-query-box {
+    padding: 20px;
+    text-align: center;
+    }
+
+    @media (max-width: 600px) {
+        #media-query-box {
+        background-color: red;
+        }
+    }
+    @media (min-width: 601px) {
+        #media-query-box {
+        background-color: blue;
+        }
+    }
+#responsiivinen-nav #nav-list {
+    display: flex;
+    list-style: none;
+    }
+    @media (max-width: 600px) {
+        #responsiivinen-nav #nav-list {
+            display: none;
+        }
+        #responsiivinen-nav #menu-toggle {
+            display: block;
+        }
+    }
+    @media (min-width: 601px) {
+        #menu-toggle {
+        display: none;
+        }
+    }

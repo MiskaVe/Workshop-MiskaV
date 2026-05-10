@@ -117,10 +117,10 @@ input[type="submit"]:hover {
 }
 
 #harmaa {
-    width: 25%;
-    height: auto;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
+  width: 25%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
 
 #harmaa:hover {
